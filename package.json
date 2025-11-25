@@ -1,6 +1,6 @@
 {
   "name": "cosine-similarity-util-class",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Cosine similarity util class",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
