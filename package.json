@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "@types/node": "^24.10.1"
-  }
+  },
+  "files": ["dist", "README.md"]
 }
