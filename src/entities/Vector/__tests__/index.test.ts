@@ -239,7 +239,6 @@ describe("Vector", () => {
       const vector1 = new Vector("v1", [1, 2, 3, 4, 5]);
       const vector2 = new Vector("v2", [5, 4, 3, 2, 1]);
 
-      // dot product = 1*5 + 2*4 + 3*3 + 4*2 + 5*1 = 5 + 8 + 9 + 8 + 5 = 35
       expect(vector1.getDotProduct(vector2)).toBe(35);
 
       const similarity = vector1.getCossinSimilarity(vector2);
