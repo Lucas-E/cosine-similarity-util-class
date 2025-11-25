@@ -2,12 +2,13 @@
   "name": "cosine-similarity-util-class",
   "version": "1.1.2",
   "description": "Cosine similarity util class",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./src/index.ts",
-      "types": "./src/index.ts"
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -32,7 +33,8 @@
     "semantic-release": "^25.0.2"
   },
   "files": [
-    "src",
-    "!README.md"
+    "dist",
+    "!README.md",
+    "!*.map"
   ]
 }

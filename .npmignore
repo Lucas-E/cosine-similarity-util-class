@@ -1,0 +1,27 @@
+# Arquivos de código fonte TypeScript
+src/
+
+# Arquivos de documentação
+README.md
+
+# Arquivos de teste
+__tests__/
+*.test.ts
+*.test.js
+*.test.d.ts
+*.spec.ts
+*.spec.js
+*.spec.d.ts
+
+# Configurações de desenvolvimento
+jest.config.ts
+tsconfig.json
+.github/
+.gitignore
+.nvmrc
+.releaserc
+node_modules/
+package-lock.json
+
+# Source maps (opcional - remova esta linha se quiser incluir os .map)
+*.map
