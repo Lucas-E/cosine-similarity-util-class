@@ -2,8 +2,8 @@ name: Publish npm package
 on:
   push:
     branches:
-      - main
-      - staging
+      - release-main
+      - release-staging
 
 permissions:
   contents: write
