@@ -64,13 +64,17 @@ console.log(dotProduct);  // 32
 
 Cosine similarity measures the similarity between two vectors by calculating the cosine of the angle between them. The result ranges from -1 (opposite directions) to 1 (same direction), with 0 indicating orthogonality (perpendicular).
 
+The formula is: **cos(θ) = (a · b) / (||a|| × ||b||)**
+
 ```typescript
 const vector1 = new Vector("v1", [3, 4]);
 const vector2 = new Vector("v2", [4, 3]);
 
-// Cosine similarity = (dot_product) / (norm1) * norm2
+// dot product = 3*4 + 4*3 = 24
+// norm1 = 5, norm2 = 5
+// Cosine similarity = 24 / (5 * 5) = 0.96
 const similarity = vector1.getCossinSimilarity(vector2);
-console.log(similarity);  // 24 (based on the formula used in the implementation)
+console.log(similarity);  // 0.96
 ```
 
 #### Use Cases for Cosine Similarity
@@ -195,7 +199,7 @@ const vector1 = new Vector("v1", [1, 2, 3]);
 const vector2 = new Vector("v2", [-1, -2, -3]);
 
 const similarity = vector1.getCossinSimilarity(vector2);
-console.log(similarity);  // Negative value (opposite directions)
+console.log(similarity);  // -1 (opposite directions)
 ```
 
 ### Example 3: Multi-dimensional Vector Operations
@@ -208,8 +212,11 @@ const vector2 = new Vector("v2", [5, 4, 3, 2, 1]);
 const dotProduct = vector1.getDotProduct(vector2);
 console.log(dotProduct);  // 35
 
+// norm1 = sqrt(1 + 4 + 9 + 16 + 25) = sqrt(55) ≈ 7.416
+// norm2 = sqrt(25 + 16 + 9 + 4 + 1) = sqrt(55) ≈ 7.416
+// similarity = 35 / (sqrt(55) * sqrt(55)) = 35 / 55 ≈ 0.636
 const similarity = vector1.getCossinSimilarity(vector2);
-console.log(similarity);  // Positive value indicating similarity
+console.log(similarity);  // 0.636 (moderate similarity)
 ```
 
 ### Example 4: Working with Small Coefficients

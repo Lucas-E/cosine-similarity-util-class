@@ -53,7 +53,7 @@ export class Vector implements IVector {
     const dotProduct = this.getDotProduct(vectorToCompare);
     const currentNorme = this.getNorm();
     const comparedVectorNorm = vectorToCompare.getNorm();
-    return (dotProduct / currentNorme) * comparedVectorNorm;
+    return dotProduct / (currentNorme * comparedVectorNorm);
   }
 
   //setters

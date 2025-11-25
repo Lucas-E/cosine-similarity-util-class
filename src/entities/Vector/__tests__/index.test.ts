@@ -136,7 +136,7 @@ describe("Vector", () => {
       // norm1 = 5, norm2 = 5
       // similarity = 24 / (5 * 5) = 24/25 = 0.96
       const similarity = vector1.getCossinSimilarity(vector2);
-      expect(similarity).toBeCloseTo(24, 10);
+      expect(similarity).toBeCloseTo(0.96, 10);
     });
 
     it("should handle negative coefficients correctly", () => {
@@ -146,8 +146,9 @@ describe("Vector", () => {
       // These vectors point in opposite directions
       // dot product = -1 - 4 - 9 = -14
       // norms = sqrt(14) each
+      // similarity = -14 / (sqrt(14) * sqrt(14)) = -14 / 14 = -1
       const similarity = vector1.getCossinSimilarity(vector2);
-      expect(similarity).toBeLessThan(0);
+      expect(similarity).toBeCloseTo(-1, 10);
     });
   });
 
