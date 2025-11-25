@@ -32,7 +32,6 @@
     "semantic-release": "^25.0.2"
   },
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ]
 }
