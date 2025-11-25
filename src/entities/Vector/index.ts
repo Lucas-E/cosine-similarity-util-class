@@ -74,5 +74,6 @@ export class Vector implements IVector {
   setLabel(newLabel: string) {
     if (!newLabel || !(typeof newLabel === "string"))
       throw new Error("label must be an string");
+    this.label = newLabel
   }
 }
