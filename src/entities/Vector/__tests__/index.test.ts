@@ -1,4 +1,4 @@
-import { Vector } from "./index";
+import { Vector } from "../index";
 
 describe("Vector", () => {
   describe("Constructor and initialization", () => {
