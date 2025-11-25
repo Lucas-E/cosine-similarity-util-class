@@ -44,5 +44,6 @@
       // Add other types as needed
     ]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts", "**/__tests__/**"]
 }

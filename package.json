@@ -1,9 +1,15 @@
 {
-  "name": "cossin-similarity-util-class",
-  "version": "1.0.11",
-  "description": "Cossin similarity util class",
-  "type": "module",
+  "name": "cosine-similarity-util-class",
+  "version": "1.0.19",
+  "description": "Cosine similarity util class",
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/src/index.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "jest",
     "build": "rm -rf ./dist && npx tsc"

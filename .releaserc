@@ -1,3 +1,10 @@
 {
-  "branches": ["main", "staging"]
+  "branches": [
+    "main",
+    {
+      "name": "staging",
+      "channel": "staging",
+      "prerelease": "alpha"
+    }
+  ]
 }
