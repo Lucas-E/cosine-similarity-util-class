@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Cossin similarity util class",
   "type": "module",
-  "main": "src/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "test": "jest",
     "build": "rm -rf ./dist && npx tsc"
