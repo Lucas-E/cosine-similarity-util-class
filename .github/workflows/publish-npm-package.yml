@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: '22.14.0'
       - name: Install dependencies
-      - run: npm install
+        run: npm install
       - name: Build package
-      - run: npm run build
+        run: npm run build
       - name: release
         env:
           GITHUB_TOKEN: {{ secrets.GITHUB_TOKEN }}
