@@ -1,7 +1,7 @@
 {
-  "name": "cossin-similarity-util-class",
+  "name": "cosine-similarity-util-class",
   "version": "1.0.13",
-  "description": "Cossin similarity util class",
+  "description": "Cosine similarity util class",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "exports": {
