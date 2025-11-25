@@ -1,0 +1,20 @@
+{
+  "name": "cossin-similarity-utils",
+  "version": "1.0.0",
+  "description": "Cossin similarity util class",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf ./dist && npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
